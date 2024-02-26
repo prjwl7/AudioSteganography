@@ -1,0 +1,61 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DECRYPTION FHSS</title>
+    <link rel="stylesheet" href="../static/css/output_speech3.css">
+</head>
+<body>
+    <h1 class="top-heading-speech-output">OUTPUT AUDIO</h1>
+
+    <div class="audio-signal">
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+    </div>
+
+    <div class="audio-container">
+        <p>Audio File Path: {{ output_audio_path }}</p>
+        <audio controls>
+            <!-- Replace 'your_audio_file_path' with the actual path to your audio file -->
+            <source src="../media/output/revealed.wav" id ="play_button">
+            Your browser does not support the audio element.
+        </audio>
+
+        <!-- Download option -->
+        <a href="../media/output/revealed.wav" download="output_audio.wav">
+            <button class="download-button">Download</button>
+        </a>
+    </div>
+</body>
+</html>

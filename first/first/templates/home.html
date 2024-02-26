@@ -1,0 +1,109 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/home.css">
+    <link rel="stylesheet" href="{% static 'css/home.css' %}" type="text/css">
+    <title>HOME PAGE</title>
+    <script>
+        function redirectToSpeechPage() {
+            window.location.href = 'speech2.html';
+        }
+        function redirectToSpeechPage1() {
+            window.location.href = 'speech2.html';
+        }
+        function redirectToSpeechPage2() {
+            window.location.href = 'decryption_audio.html';
+        }
+    </script>
+</head>
+<body>
+    <h1 class="top-heading">A STUDY ON AUDIO STEGANOGRAPHY </h1>
+    
+    <!--Audio Signal-->
+    <div class="audio-signal">
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+        <div class="audio-container">
+            <div class="audio-bar-1"></div>
+            <div class="audio-bar-2"></div>
+            <div class="audio-bar-3"></div>
+            <div class="audio-bar-4"></div>
+            <div class="audio-bar-5"></div>
+            <div class="audio-bar-6"></div>
+            <div class="audio-bar-9"></div>
+            <div class="audio-bar-10"></div>
+        </div>
+    </div>
+    <div class="buttons-container">
+        <div class="extract-file typing-encryption" onclick="redirectToSpeechPage1()" style="color: green; background-color: transparent; border: 1px solid green; padding: 5px 10px; text-align: center; cursor: pointer; font-family: 'Helvetica Neue', sans-serif; font-size: 16px; font-weight: bold; height: 30px; border-radius: 10px;">
+            FHSS ENCRYPTION
+        </div>
+        
+        <div class="extract_file" class="typing-encryption" onclick="redirectToSpeechPage2()" style="color: red; background-color: transparent; border: 1px solid red; padding: 5px 10px; text-align: center; cursor: pointer; font-family: 'Helvetica Neue', sans-serif; font-size: 16px; font-weight: bold; height: 30px; width: 200px; border-radius: 10px;">
+            FHSS DECRYPTION
+        </div>
+    </div>
+    <!--Images-->
+    <div class="container">
+        <div class="image-container">
+            <img class="image-to-hide" src="../static/css/second.jpg" alt="First Image">
+        </div>
+        <img class="overlay-image" src="../static/css/digital-painting-mountain-with-colorful-tree-foreground_1340-25699.jpg.avif" alt="Second Image">
+    </div>
+    <!-- Text-->
+    <div class="typing-text">
+        Embed Text inside Text !
+    </div>
+   <!--
+     <div id="falling-letters">
+        <p class="falling-letter" style="animation-delay: 1s; transform: rotate(45deg);">E</p>
+        <p class="falling-letter" style="animation-delay: 2s; transform: rotate(90deg);">N</p>
+        <p class="falling-letter" style="animation-delay: 3s; transform: rotate(135deg);">C</p>
+        <p class="falling-letter" style="animation-delay: 4s; transform: rotate(180deg);">R</p>
+        <p class="falling-letter" style="animation-delay: 5s; transform: rotate(225deg);">Y</p>
+        <p class="falling-letter" style="animation-delay: 6s; transform: rotate(270deg);">P</p>
+        <p class="falling-letter" style="animation-delay: 7s; transform: rotate(315deg);">T</p>
+        <p class="falling-letter" style="animation-delay: 8s; transform: rotate(0deg);">I</p>
+        <p class="falling-letter" style="animation-delay: 9s; transform: rotate(45deg);">O</p>
+        <p class="falling-letter" style="animation-delay: 10s; transform: rotate(90deg);">N</p>
+      </div>
+      
+      <div id="falling-letters-2">
+        <p class="falling-letter-d" style="animation-delay: 1s; transform: rotate(135deg);">D</p>
+        <p class="falling-letter-d" style="animation-delay: 2s; transform: rotate(180deg);">E</p>
+        <p class="falling-letter-d" style="animation-delay: 3s; transform: rotate(225deg);">C</p>
+        <p class="falling-letter-d" style="animation-delay: 4s; transform: rotate(270deg);">R</p>
+        <p class="falling-letter-d" style="animation-delay: 5s; transform: rotate(315deg);">Y</p>
+        <p class="falling-letter-d" style="animation-delay: 6s; transform: rotate(0deg);">P</p>
+        <p class="falling-letter-d" style="animation-delay: 7s; transform: rotate(45deg);">T</p>
+        <p class="falling-letter-d" style="animation-delay: 8s; transform: rotate(90deg);">I</p>
+        <p class="falling-letter-d" style="animation-delay: 9s; transform: rotate(135deg);">O</p>
+        <p class="falling-letter-d" style="animation-delay: 10s; transform: rotate(180deg);">N</p>
+      </div>
+   -->
+
+
+</body>
+</html>
